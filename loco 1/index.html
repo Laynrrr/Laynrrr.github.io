@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="librairies/locomotive-scroll.css">
+    <link rel="stylesheet" href="loco.css">
+    <title>projects</title>
+</head>
+<body data-scroll-container>
+    <div class="mouse-follower"></div>
+    <div class="navbar">
+        <a href="#">contact</a>
+        <a href="#">home</a>
+        <a href="#">projects</a>
+    </div>  
+    <section id="sec-1" data-scroll-section>
+        <div class="container-image">
+            <div class="image-image">
+                <img src="../images/first-container-1.jpg" alt="stairs" class="image-1" data-scroll data-scroll-speed="1">
+                <img src="../images/first-container-3.jpg" alt="stairs" class="image-2"data-scroll data-scroll-speed="1.8">
+                <img src="../images/first-container-2.jpg" alt="stairs" class="image-3"data-scroll data-scroll-speed="1.5">
+            </div>
+            <div class="image-text">
+                <h3>1</h3>
+                <h1 data-scroll data-scroll-speed="-1.1" data-scroll-direction="horizontal">stairs.</h1>
+                <p>A stair, or a stairstep, is one step in a flight of stairs. In buildings, stairs is a term applied to a complete flight of steps between two floors. A stair flight is a run of stairs or steps between landings. A staircase or stairway is one or more flights of stairs leading from one floor.</p>
+            </div>
+        </div>
+        
+    </section>
+    <section id="sec-2" data-scroll-section>
+        <div class="container-image2">
+            
+        </div>
+    </section>
+    <script src="librairies/locomotive-scroll.min.js"></script>
+    <script>
+        const scroll = new LocomotiveScroll({
+            el: document.querySelector('[data-scroll-container]'),
+            smooth: true
+        });
+    </script>
+    <script src="loco.js"></script>
+</body>
+</html>
